@@ -7,30 +7,81 @@
      font-size: 70px;
      background-color:transparent;
     color: black;
+    border-style: inset;
+    max-width:1300px;
+    max-height: 1000px;
     
      background-size: contain;
    
    
  }
+ .heading_style
+ {
+  font-size: 130px;
+  background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+ }
+
+ .button-styling
+ {
+    display: flex;
+    gap: 150px;
+   
+    /* justify-content: space-between; */
+ }
+ @media screen and (max-width:850px)
+ {
+    .heading_style {
+        font-size: 50px;
+
+    }
+    .button-styling
+    {
+        display: grid;
+        grid-gap: 30px;
+        margin-left: 0;
+    }
+
+    .container-fluid
+    {
+        width:300px;
+        height: auto;
+    }
+    .button-styling .dec
+    {
+       margin-left: 50px;
+    }
+    .button-styling .inc
+    {
+       margin-left: 50px;
+    }
+
+    
+ }
  .dec
  {
-    background-color:white;
-    border-color:red;
-    margin-left: 20%;
-    width: 10%;
-    height: 20%;
-   
-    border-width: 5px
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,92,1) 35%, rgba(0,212,255,1) 100%);
+   border-style: none;
+    border-radius: 50%;
+    margin-left: 400px;
+    width: 150px; /* Increase the width and height to create larger circles */
+    height: 150px;
+
  }
  
  .inc
  {
     background-color:white;
-    border-color: aquamarine;
-    margin-right: 20%;
-    width: 10%;
-    height: 20%;
-    border-width: 5px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,92,1) 35%, rgba(0,212,255,1) 100%);
+    border-style: none;
+  border-radius: 50%;
+  width: 150px; /* Increase the width and height to create larger circles */
+    height: 150px;
     
    
  }

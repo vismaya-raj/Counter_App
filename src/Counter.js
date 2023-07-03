@@ -1,5 +1,6 @@
 import { useState } from "react"
 import './Counter.css';
+import Type from "./Type";
 
 export function Counter()
 {
@@ -21,13 +22,20 @@ export function Counter()
     
   return(
     <div className="container-fluid">
+      <div> 
+      <h1 className="heading_style">
+       Counter App 
+      </h1>
+      <h3 className="sub-heading"><Type/></h3>
+      </div>
    
    <div className="counter"> 
+ 
     {getCount}
     </div >
     
-    <div className=" d-flex justify-content-between">
-    <button className = "dec" btn btn-warning onClick={decrement}>-</button>
+    <div className="button-styling">
+    <button className = "dec" onClick={decrement}>-</button>
       <button className="inc" onClick={increment}>+</button>
     
       </div>
