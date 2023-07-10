@@ -1,7 +1,9 @@
 import { useState } from "react"
 import './Counter.css';
 import Type from "./Type";
-// import AddIcon from '@mui/icons-material/Add';
+import { motion } from 'framer-motion';
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
 
 export function Counter()
 {
@@ -36,8 +38,12 @@ export function Counter()
     </div >
     
     <div className="button-styling">
-    <button className = "dec" onClick={decrement}>-</button>
-      <button className="inc" onClick={increment}>+</button>
+    <motion.button className="dec" onClick={decrement} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        <RemoveIcon style={{fontSize:"100px"}}/>
+      </motion.button>
+      <motion.button className="inc" onClick={increment} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        <AddIcon style={{fontSize:"100px"}}/>
+      </motion.button>
     
       </div>
      
